@@ -5,6 +5,9 @@ table {
 .cell {
     height: 40px;
     width: 40px;
-    color: #101E24;
+
+}
+.empty {
+      background-color: #EEE !important
 }
 /* ----- Grid Styling End -----  */
