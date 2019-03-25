@@ -4,10 +4,11 @@ import Controls from './controls';
 
 class Main extends Component {
   render(){
+    const {cells} = this.props;
     return (
       <React.Fragment>
         <div className="col-sm-6">
-          <Grid />
+          <Grid/>
         </div>
         <div className="col-sm-2">
           <Controls />

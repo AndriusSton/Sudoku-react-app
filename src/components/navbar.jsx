@@ -7,10 +7,9 @@ class NavBar extends Component {
     return(
       <nav className="navbar navbar-expand-lg navbar-light bg-light col-sm-8">
         <form class="form-inline">
-
         {levels.map(level=>
           <button
-          onClick={getGrid} 
+          onClick={getGrid}
           class="btn btn-outline-success"
           type="button">
           {level.value}

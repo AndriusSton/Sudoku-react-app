@@ -13,10 +13,6 @@ class App extends Component {
     ]
   }
 
-  getGrid = level => {
-    //ajax call depending on a level
-  }
-
   render(){
     return (
 
