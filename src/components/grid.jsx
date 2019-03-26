@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import Cell from './cell';
+import EmptyCell from './emptyCell';
 
 class Grid extends Component {
 state = {
@@ -15,12 +16,17 @@ createGrid = () => {
   for (let i = 0; i < 9; i++) {
     let children = []
       for (let j = 0; j < 9; j++) {
-        children.push(
-          <Cell
-            key={(i * 9) +j}
-            value={this.state.numbers[(i * 9) +j]}
-            />
-        )
+          if(this.state.numbers[(i * 9) +j] === 0){
+            children.push(<EmptyCell
+              key={(i * 9) +j}
+              value={0}
+              />)
+          } else {
+            children.push(<Cell
+              key={(i * 9) +j}
+              value={this.state.numbers[(i * 9) +j]}
+              />)
+          }
       }
     grid.push(<div>{children}</div>)
   }
@@ -28,6 +34,7 @@ createGrid = () => {
 };
 
   render(){
+    console.log(this.props);
     return (
       <div>
         <form>
