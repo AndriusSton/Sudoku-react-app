@@ -1,4 +1,5 @@
-import React, {Component} from 'react' ;
+import React, {Component} from 'react';
+import Cell from './cell';
 
 class Grid extends Component {
 state = {
@@ -15,19 +16,10 @@ createGrid = () => {
     let children = []
       for (let j = 0; j < 9; j++) {
         children.push(
-          this.state.numbers[(i * 9) +j] !== 0 ?
-          (<button
-            class="btn btn-outline-success cell"
-            type="button"
+          <Cell
             key={(i * 9) +j}
-            >{this.state.numbers[(i * 9) +j]}
-          </button>) :
-          (<button
-            class="btn btn-outline-success cell empty"
-            type="button"
-            key={(i * 9) +j}
-            ><span>&nbsp;</span>
-          </button>)
+            value={this.state.numbers[(i * 9) +j]}
+            />
         )
       }
     grid.push(<div>{children}</div>)

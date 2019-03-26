@@ -7,9 +7,9 @@ class App extends Component {
 
   state = {
     levels : [
-      {id : 1, value : 'Easy'},
-      {id : 2, value : 'Medium'},
-      {id : 3, value : 'Hard'}
+      {id : 'level1', value : 'Easy'},
+      {id : 'level2', value : 'Medium'},
+      {id : 'level3', value : 'Hard'}
     ]
   }
 
