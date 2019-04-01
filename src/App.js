@@ -15,7 +15,6 @@ class App extends Component {
 
   render(){
     return (
-
       <div className="row align-items-center">
         <NavBar
           levels={this.state.levels}
