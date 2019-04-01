@@ -4,7 +4,7 @@ import Row from './row';
 class Grid extends Component {
 
 state = {
-  rows : this.props.rows
+  rows : this.props.grid
 };
 
   render(){
