@@ -3,15 +3,19 @@ import Row from './row';
 
 class Grid extends Component {
 
-state = {
-  rows : this.props.grid
-};
+constructor(props){
+  super(props);
+  this.state = {
+    rows : props.grid
+  }
+}
 
   render(){
     return (
       <form>
         {this.state.rows.map((row) =>
           <Row
+          row={row}
           id={row.id}
           key={row.id}
           cells={row.value} />

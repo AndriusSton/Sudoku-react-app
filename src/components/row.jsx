@@ -4,7 +4,7 @@ import Cell from './cell';
 class Row extends Component {
 
 state = {
-  cells : this.props.cells
+  cells : this.props.row.value
 }
 
 handleIncrement = cell => {
@@ -20,6 +20,7 @@ handleIncrement = cell => {
 }
 
 render(){
+  console.log('CELLS: ', this.state.cells)
  return(
    <div>
     {this.state.cells.map((cell) =>
