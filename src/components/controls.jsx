@@ -1,8 +1,8 @@
-import React, {Component} from 'react' ;
+import React, {Component} from 'react';
 
 class Controls extends Component {
 
-  render(){
+  render() {
     return (
       <div>
       </div>
