@@ -7,6 +7,26 @@ table {
     width: 40px;
 
 }
+
+/* ---- Borders ---- */
+.border-left {
+  border-left: solid medium !important
+}
+
+.border-right {
+  border-right: solid medium !important
+}
+
+.border-bottom {
+  border-bottom: solid medium !important
+}
+
+.border-top {
+  border-top: solid medium !important
+}
+
+/* ---- */
+
 .empty {
       background-color: #EEE !important
 }
